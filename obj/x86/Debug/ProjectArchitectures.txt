@@ -1,0 +1,1 @@
+C:\Users\nikol\source\repos\Calculator\Calculator.csproj;x86
