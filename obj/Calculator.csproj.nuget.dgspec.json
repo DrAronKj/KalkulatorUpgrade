@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nikol\\source\\repos\\Calculator\\Calculator.csproj": {}
+    "C:\\Users\\Gb-delta\\Documents\\GitHub\\KalkulatorUpgrade\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nikol\\source\\repos\\Calculator\\Calculator.csproj": {
+    "C:\\Users\\Gb-delta\\Documents\\GitHub\\KalkulatorUpgrade\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikol\\source\\repos\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\Gb-delta\\Documents\\GitHub\\KalkulatorUpgrade\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\nikol\\source\\repos\\Calculator\\Calculator.csproj",
-        "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikol\\source\\repos\\Calculator\\obj\\",
+        "projectPath": "C:\\Users\\Gb-delta\\Documents\\GitHub\\KalkulatorUpgrade\\Calculator.csproj",
+        "packagesPath": "C:\\Users\\Gb-delta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gb-delta\\Documents\\GitHub\\KalkulatorUpgrade\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gb-delta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -34,11 +34,6 @@
           "uap10.0.17763": {
             "projectReferences": {}
           }
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
