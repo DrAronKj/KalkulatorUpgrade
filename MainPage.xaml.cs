@@ -24,6 +24,8 @@ namespace Calculator
 {
     public sealed partial class MainPage : Page
     {
+        int _outnum = 0;
+        int active_base = 10;
         private StringBuilder currentInput = new StringBuilder();
         public string DisplayText => currentInput.ToString();
         private ObservableCollection<CalculationHistory> calculationHistory = new ObservableCollection<CalculationHistory>();
@@ -32,8 +34,7 @@ namespace Calculator
         public MainPage()
         {
             this.InitializeComponent();
-            ApplicationView.PreferredLaunchViewSize = new Size(480, 800);
-            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            
             InitializeDatabase();
             LoadCalculationHistory();
         }
@@ -151,6 +152,47 @@ namespace Calculator
             public string Result { get; set; }
         }
 
+        private void output()
+        {
+            switch (active_base)
+            {
+                case 2:
+                    Display.Text = Convert.ToString(_outnum, 2);
+                    break;
+                case 8:
+                    Display.Text = Convert.ToString(_outnum, 8);
+                    break;
+                case 16:
+                    Display.Text = Convert.ToString(_outnum, 16);
+                    break;
+                default:
+                    Display.Text = Convert.ToString(_outnum);
+                    break;
+            }
+        }
+        private void RadioButton_Checked(object sender, RoutedEventArgs e) 
+        {
+            active_base = 10;
+            output();
+        }
+
+        private void bin_Checked(object sender, RoutedEventArgs e)
+        {
+            active_base = 2;
+            output();
+        }
+
+        private void oct_Checked(object sender, RoutedEventArgs e)
+        {
+            active_base = 8;
+            output();
+        }
+
+        private void hex_Checked(object sender, RoutedEventArgs e)
+        {
+            active_base = 16;
+            output();
+        }
     }
 }
 

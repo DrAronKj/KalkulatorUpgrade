@@ -42,33 +42,43 @@
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Button Content="1" Click="Number_Click"/>
-                <Button Content="2" Click="Number_Click"/>
-                <Button Content="3" Click="Number_Click"/>
-                <Button Content="+" Click="Operator_Click"/>
+                <Button Content="1" Click="Number_Click" Height="124" Width="134" FontSize="48"/>
+                <Button Content="2" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="3" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="+" Click="Operator_Click" Width="134" Height="124" FontSize="48"/>
             </StackPanel>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <Button Content="4" Click="Number_Click"/>
-                <Button Content="5" Click="Number_Click"/>
-                <Button Content="6" Click="Number_Click"/>
-                <Button Content="-" Click="Operator_Click"/>
+                <Button Content="4" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="5" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="6" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="-" Click="Operator_Click" Width="134" Height="124" FontSize="48"/>
             </StackPanel>
 
             <StackPanel Grid.Row="2" Orientation="Horizontal">
-                <Button Content="7" Click="Number_Click"/>
-                <Button Content="8" Click="Number_Click"/>
-                <Button Content="9" Click="Number_Click"/>
-                <Button Content="*" Click="Operator_Click"/>
+                <Button Content="7" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="8" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="9" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="*" Click="Operator_Click" Width="134" Height="124" FontSize="48"/>
             </StackPanel>
 
             <StackPanel Grid.Row="3" Orientation="Horizontal">
-                <Button Content="C" Click="Clear_Click"/>
-                <Button Content="0" Click="Number_Click"/>
-                <Button Content="=" Click="Equals_Click"/>
-                <Button Content="/" Click="Operator_Click"/>
+                <Button Content="C" Click="Clear_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="0" Click="Number_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="=" Click="Equals_Click" Width="134" Height="124" FontSize="48"/>
+                <Button Content="/" Click="Operator_Click" Width="134" Height="124" FontSize="48"/>
             </StackPanel>
         </Grid>
+        <RadioButton x:Name="RadioButton" Content="Decimal" Margin="10,85,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="bin" Content="Binary" Margin="158,85,0,0" VerticalAlignment="Top" Checked="bin_Checked"/>
+        <RadioButton x:Name="oct" Content="Octale" Margin="312,85,0,0" VerticalAlignment="Top" Checked="oct_Checked"/>
+        <RadioButton x:Name="hex" Content="Hexadecimal" Margin="460,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Checked="hex_Checked">
+            <RadioButton.RenderTransform>
+                <CompositeTransform SkewX="1.685" TranslateX="0.471"/>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <TextBlock HorizontalAlignment="Left" Margin="1061,101,0,0" TextWrapping="Wrap" Text="History" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1070,181,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
     </Grid>
 
 </Page>
